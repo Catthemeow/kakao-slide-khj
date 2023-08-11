@@ -1,0 +1,35 @@
+#wrap {
+  width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid #000;
+}
+#wrap > header > nav {
+  position: relative;
+  width: 480px;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+#wrap > header > nav > ul {
+  display: flex;
+}
+#wrap > header > nav > ul > li > a {
+  display: block;
+}
+#wrap > .content-box {
+  position: relative;
+}
+#wrap > .content-box > .content-img {
+  display: flex;
+}
+#wrap > .content-box > .content-img > figure {
+  display: block;
+  margin: 0;
+  border: 1px solid #000;
+}
+#wrap > .content-box > .slide-nav {
+  display: flex;
+}
+#wrap > .content-box > .slide-nav > li > a {
+  display: block;
+}/*# sourceMappingURL=style.css.map */
