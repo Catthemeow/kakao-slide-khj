@@ -3,6 +3,7 @@
   overflow: hidden;
   width: 700px;
   margin: 0 auto;
+  font-family: "Nanum Gothic";
   text-align: center;
 }
 #wrap a {
@@ -15,7 +16,6 @@
   color: #696969;
   font-size: 27px;
   font-weight: 550;
-  font-family: "Nanum Gothic";
 }
 #wrap > header > nav {
   position: relative;
@@ -30,27 +30,24 @@
   background-image: url("../images/btn_talk.png");
 }
 #wrap > header > nav > ul > li:nth-child(1) {
-  background-position: 0 0;
+  background-position-x: 0;
 }
 #wrap > header > nav > ul > li:nth-child(2) {
-  background-position: -80px 0;
+  background-position-x: -80px;
 }
 #wrap > header > nav > ul > li:nth-child(3) {
-  background-position: -160px 0;
+  background-position-x: -160px;
 }
 #wrap > header > nav > ul > li:nth-child(4) {
-  background-position: -240px 0;
+  background-position-x: -240px;
 }
 #wrap > header > nav > ul > li:nth-child(5) {
-  background-position: -320px 0;
+  background-position-x: -320px;
 }
 #wrap > header > nav > ul > li:nth-child(6) {
-  background-position: -400px 0;
+  background-position-x: -400px;
 }
-#wrap > header > nav > ul > li:hover {
-  background-position-y: -90px;
-}
-#wrap > header > nav > ul > li.on {
+#wrap > header > nav > ul > li:hover, #wrap > header > nav > ul > li.on {
   background-position-y: -90px;
 }
 #wrap > header > nav > ul > li > a {
@@ -91,10 +88,10 @@
   background-image: url("../images/img_talk_button.png");
 }
 #wrap > .content-box > .slide-nav > ol > li.prev {
-  background-position: 0 0;
+  background-position-y: 0;
 }
 #wrap > .content-box > .slide-nav > ol > li.next {
-  background-position: 0 -70px;
+  background-position-y: -70px;
 }
 #wrap > .content-box > .slide-nav > ol > li:hover {
   background-position-x: -70px;

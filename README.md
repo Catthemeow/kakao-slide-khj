@@ -1,6 +1,10 @@
 # kakao-slide_khj
 
 <!--
+
+완성후 git저장소에 업로드, page 주소를 제출하세요
+제이쿼리에서 animate()에 반드시 easing 속도를 적용하시오
+
 btn_talk.png
 사이즈 80*90
 무료채팅{background-position:0 0;}
