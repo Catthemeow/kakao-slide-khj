@@ -60,22 +60,22 @@
 #wrap > .content-box {
   position: relative;
 }
-#wrap > .content-box > .content-img {
+#wrap > .content-box > .content {
   position: relative;
   overflow: hidden;
   width: 478px;
   margin: 0 auto;
 }
-#wrap > .content-box > .content-img > ol {
+#wrap > .content-box > .content > .main_img {
   position: absolute;
   display: flex;
   position: relative;
   top: 0;
 }
-#wrap > .content-box > .content-img > ol > li {
+#wrap > .content-box > .content > .main_img > li {
   margin: 0;
 }
-#wrap > .content-box > .content-img > ol > li > img {
+#wrap > .content-box > .content > .main_img > li > img {
   height: 438px;
 }
 #wrap > .content-box > .slide-nav > ol {

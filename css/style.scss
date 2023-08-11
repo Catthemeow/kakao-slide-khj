@@ -68,14 +68,14 @@
 		position: relative;
 
 		//메인 이미지
-		> .content-img {
+		> .content {
 			position: relative;
 			overflow: hidden;
 			width: 478px;
 			margin: 0 auto;
 
 			// 포지셔닝
-			> ol {
+			> .main_img {
 				position: absolute;
 				display: flex;
 				position: relative;
