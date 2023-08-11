@@ -1,45 +1,120 @@
 @charset "utf-8";
 
 #wrap {
+	position: relative;
+	overflow: hidden;
 	width: 700px;
 	margin: 0 auto;
 	text-align: center;
-	border: 1px solid #000;
+	a {
+		text-indent: -9999px;
+	}
 	> header {
+		margin-bottom: 20px;
 		> h1 {
+			color: #696969;
+			font-size: 27px;
+			font-weight: 550;
+			font-family: 'Nanum Gothic';
 		} //end of h1
 		> nav {
 			position: relative;
 			width: 480px;
 			margin: 0 auto;
-			border: 1px solid #000;
 			> ul {
 				display: flex;
 				> li {
+					width: 80px;
+					background-image: url('../images/btn_talk.png');
+					&:nth-child(1) {
+						background-position: 0 0;
+					}
+					&:nth-child(2) {
+						background-position: -80px 0;
+					}
+					&:nth-child(3) {
+						background-position: -160px 0;
+					}
+					&:nth-child(4) {
+						background-position: -240px 0;
+					}
+					&:nth-child(5) {
+						background-position: -320px 0;
+					}
+					&:nth-child(6) {
+						background-position: -400px 0;
+					}
+
+					//호버표시
+					&:hover {
+						background-position-y: -90px;
+					}
+
+					//활성화 표시
+					&.on {
+						background-position-y: -90px;
+					}
+
 					> a {
 						display: block;
+						height: 90px;
 					} //end of a
 				} //end of li
 			} //end of ul
 		} //end of nav
 	} //end of header
+
 	> .content-box {
 		position: relative;
+
+		//메인 이미지
 		> .content-img {
-			display: flex;
-			> figure {
-				display: block;
-				margin: 0;
-				border: 1px solid #000;
-			} //end of figure
-		} //end of content-img
+			position: relative;
+			overflow: hidden;
+			width: 478px;
+			margin: 0 auto;
+
+			// 포지셔닝
+			> ol {
+				position: absolute;
+				display: flex;
+				position: relative;
+				top: 0;
+				> li {
+					margin: 0;
+					> img {
+						height: 438px;
+					}
+				} //end of li
+			} //end of ol
+		} //end of .content-img
+
 		> .slide-nav {
-			display: flex;
-			> li {
-				> a {
-					display: block;
+			> ol {
+				display: flex;
+				justify-content: space-between;
+				position: absolute;
+				top: 50%;
+				width: 100%;
+				transform: translate(0, -50%);
+				> li {
+					width: 44px;
+					background-image: url('../images/img_talk_button.png');
+					&.prev {
+						background-position: 0 0;
+					}
+					&.next {
+						background-position: 0 -70px;
+					}
+					&:hover {
+						background-position-x: -70px;
+					}
+					> a {
+						display: block;
+						height: 44px;
+					}
 				}
-			}
+			} //end of ol
 		} //end of slide-nav
 	} //end of content-box
 } //end of #wrap

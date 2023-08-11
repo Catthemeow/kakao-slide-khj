@@ -1,35 +1,105 @@
 #wrap {
+  position: relative;
+  overflow: hidden;
   width: 700px;
   margin: 0 auto;
   text-align: center;
-  border: 1px solid #000;
+}
+#wrap a {
+  text-indent: -9999px;
+}
+#wrap > header {
+  margin-bottom: 20px;
+}
+#wrap > header > h1 {
+  color: #696969;
+  font-size: 27px;
+  font-weight: 550;
+  font-family: "Nanum Gothic";
 }
 #wrap > header > nav {
   position: relative;
   width: 480px;
   margin: 0 auto;
-  border: 1px solid #000;
 }
 #wrap > header > nav > ul {
   display: flex;
 }
+#wrap > header > nav > ul > li {
+  width: 80px;
+  background-image: url("../images/btn_talk.png");
+}
+#wrap > header > nav > ul > li:nth-child(1) {
+  background-position: 0 0;
+}
+#wrap > header > nav > ul > li:nth-child(2) {
+  background-position: -80px 0;
+}
+#wrap > header > nav > ul > li:nth-child(3) {
+  background-position: -160px 0;
+}
+#wrap > header > nav > ul > li:nth-child(4) {
+  background-position: -240px 0;
+}
+#wrap > header > nav > ul > li:nth-child(5) {
+  background-position: -320px 0;
+}
+#wrap > header > nav > ul > li:nth-child(6) {
+  background-position: -400px 0;
+}
+#wrap > header > nav > ul > li:hover {
+  background-position-y: -90px;
+}
+#wrap > header > nav > ul > li.on {
+  background-position-y: -90px;
+}
 #wrap > header > nav > ul > li > a {
   display: block;
+  height: 90px;
 }
 #wrap > .content-box {
   position: relative;
 }
 #wrap > .content-box > .content-img {
-  display: flex;
+  position: relative;
+  overflow: hidden;
+  width: 478px;
+  margin: 0 auto;
 }
-#wrap > .content-box > .content-img > figure {
-  display: block;
+#wrap > .content-box > .content-img > ol {
+  position: absolute;
+  display: flex;
+  position: relative;
+  top: 0;
+}
+#wrap > .content-box > .content-img > ol > li {
   margin: 0;
-  border: 1px solid #000;
 }
-#wrap > .content-box > .slide-nav {
+#wrap > .content-box > .content-img > ol > li > img {
+  height: 438px;
+}
+#wrap > .content-box > .slide-nav > ol {
   display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translate(0, -50%);
 }
-#wrap > .content-box > .slide-nav > li > a {
+#wrap > .content-box > .slide-nav > ol > li {
+  width: 44px;
+  background-image: url("../images/img_talk_button.png");
+}
+#wrap > .content-box > .slide-nav > ol > li.prev {
+  background-position: 0 0;
+}
+#wrap > .content-box > .slide-nav > ol > li.next {
+  background-position: 0 -70px;
+}
+#wrap > .content-box > .slide-nav > ol > li:hover {
+  background-position-x: -70px;
+}
+#wrap > .content-box > .slide-nav > ol > li > a {
   display: block;
+  height: 44px;
 }/*# sourceMappingURL=style.css.map */
